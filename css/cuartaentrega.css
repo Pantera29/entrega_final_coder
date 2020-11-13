@@ -1,0 +1,214 @@
+html {
+  font-size: 62.5%;
+  /* hacemos que la medida REM pase a valer 10px en lugar de 16px (valor predeterminado) */
+  box-sizing: border-box; }
+
+#main__title {
+  font-size: 4rem;
+  text-align: center;
+  color: white;
+  width: 50%;
+  margin-left: auto;
+  margin-right: auto; }
+
+#main__subtitle {
+  font-size: 3rem;
+  text-align: center;
+  color: white;
+  width: 50%;
+  margin-left: auto;
+  margin-right: auto; }
+
+#main__subtitle--modifier {
+  font-size: 3rem;
+  text-align: center;
+  color: #e63946;
+  font-weight: bold;
+  margin-left: auto;
+  margin-right: auto; }
+
+#main__subtitle--modifier--blue {
+  font-size: 3rem;
+  text-align: center;
+  color: #1d3557;
+  margin-left: auto;
+  margin-right: auto; }
+
+#footer__text {
+  color: white;
+  font-size: 2rem; }
+
+#btn--principal {
+  background-color: #e63946; }
+
+#btn--secundatio {
+  background-color: #25D366; }
+
+#btn--opcional {
+  background-color: #1d3557; }
+
+#box--blog {
+  height: 25rem;
+  width: 25rem; }
+
+#box--home {
+  height: 15rem;
+  width: 15rem; }
+
+main {
+  background-color: white;
+  padding: 5rem;
+  font-size: 2rem; }
+
+body {
+  background-color: white;
+  font-family: "Lato", sans-serif;
+  color: #1d3557; }
+
+header nav ul li {
+  display: inline-block; }
+
+header nav ul li a {
+  text-decoration: none;
+  color: inherit;
+  font-size: 2rem;
+  padding: 1rem; }
+
+header nav ul ol li a {
+  text-decoration: none;
+  color: inherit;
+  font-size: 2rem;
+  padding: 1.5rem; }
+
+header nav ul ol {
+  display: none;
+  position: absolute; }
+
+header nav ul {
+  list-style: none; }
+
+main table {
+  margin-left: auto;
+  margin-right: auto; }
+
+table ol {
+  list-style: none; }
+
+#t01 {
+  background-color: white;
+  color: #1d3557; }
+
+header nav ul ol li {
+  display: block; }
+
+footer {
+  background-image: linear-gradient(to right, #0f2027, #203a43, #2c5364);
+  padding: 3rem; }
+
+#header__nav {
+  display: flex;
+  justify-content: flex-end;
+  padding-right: 10rem; }
+
+#main__form--home {
+  padding: 1rem;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: white;
+  border: solid 0.1rem #1d3557; }
+
+#main__form--newsletter {
+  padding: 1rem;
+  width: 50%;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: white;
+  border: solid 0.1rem #1d3557; }
+
+#main__form--title {
+  color: #1d3557;
+  text-align: center;
+  font-size: 2rem; }
+
+#main__boxes {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 2rem; }
+
+#main__boxes--modifier {
+  border-top: solid 1rem;
+  border-top-color: #1d3557;
+  padding: 1rem;
+  margin: 2rem;
+  text-align: center;
+  font-size: 2rem;
+  background-color: #a8dadc;
+  height: 15rem;
+  width: 10rem;
+  display: inline-block;
+  transition: all 2s; }
+
+#main__boxes--modifier:hover {
+  border-top-color: #e63946;
+  padding: 1rem;
+  color: white;
+  margin: 2rem;
+  font-size: 3rem;
+  background-color: #1d3557;
+  height: 20rem;
+  width: 15rem; }
+
+#main__img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto; }
+
+#main__background {
+  background-image: linear-gradient(to right, #0f2027, #203a43, #2c5364);
+  padding-top: 1.5rem; }
+
+#main__links {
+  text-decoration: none;
+  color: white; }
+
+#main__modal {
+  display: flex;
+  margin-left: auto;
+  margin-right: auto;
+  font-size: 2rem; }
+
+#main_boton--green {
+  padding: 3rem;
+  font-size: 3rem;
+  text-align: center;
+  color: white;
+  margin: 2rem;
+  cursor: pointer;
+  background-color: #25D366;
+  border-radius: 3rem;
+  margin-left: auto;
+  margin-right: auto;
+  height: 15rem;
+  width: 25rem; }
+
+#main__boton--submit {
+  padding: 1.5rem 1.5rem;
+  background-color: #e63946;
+  border-radius: 1.5rem;
+  font-size: 2rem;
+  color: white;
+  cursor: pointer;
+  width: 100%;
+  margin-top: 0.5rem; }
+
+input[type=text], select {
+  display: inline-block;
+  width: 100%;
+  padding: 1rem 1.5rem;
+  box-sizing: border-box;
+  border-radius: 0.5rem;
+  transition: all 2s; }
+
+input[type=text]:focus {
+  border: 0.3rem solid #1d3557;
+  font-size: 2rem; }

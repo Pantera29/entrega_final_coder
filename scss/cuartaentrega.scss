@@ -1,0 +1,299 @@
+$title-font-size: 4rem;
+$subtitle-font-size: 3rem;
+$optional-font-size: 2rem;
+$principal-alignment: center;
+$primary-color: white;
+$principal-width: 50%;
+$secondary-width: 30%;
+$total-width: 100%;
+$primary-right-margin: auto;
+$primary-left-margin: auto;
+$secondary-color: #e63946;
+$subtitle-font-weight: bold;
+$principal-gradient: linear-gradient(to right, #0f2027, #203a43, #2c5364);
+$main-padding: 5rem;
+$footer-padding: 3rem;
+$small-padding:1.5rem;
+$lower-padding: 1rem;
+$principal-font: 'Lato', sans-serif;
+$third-color: #1d3557;
+$fourth-color: #a8dadc;
+$whatsapp-color: #25D366;
+$flex-display:flex;
+$inline-block-display:inline-block;
+$block-display:block;
+$flexend-justify:flex-end;
+$big-padding:10rem;
+$justify-center:center;
+$tiny-margin: 0.5rem;
+$small-margin: 2rem;
+$small-border: 1rem;
+$main-height:15rem;
+$main-width:10rem;
+$bigger-height: 20rem;
+$bigger-width:15rem;
+$button-height: 15rem;
+$button-width:25rem;
+$none:none;
+
+html{
+    font-size: 62.5%; /* hacemos que la medida REM pase a valer 10px en lugar de 16px (valor predeterminado) */
+    box-sizing: border-box;
+}
+
+#main__title {
+    font-size: $title-font-size;
+    text-align: $principal-alignment;
+    color: $primary-color;
+    width: $principal-width;
+    margin-left: $primary-left-margin;
+    margin-right: $primary-right-margin;
+
+}
+
+#main__subtitle {
+    font-size: $subtitle-font-size;
+    text-align: $principal-alignment;
+    color: $primary-color;
+    width: $principal-width;
+    margin-left: $primary-left-margin;
+    margin-right: $primary-right-margin;
+}
+
+#main__subtitle--modifier {
+    font-size: $subtitle-font-size;
+    text-align: $principal-alignment;
+    color: $secondary-color;
+    font-weight: $subtitle-font-weight;
+    margin-left: $primary-left-margin;
+    margin-right: $primary-right-margin;
+}
+
+#main__subtitle--modifier--blue {
+    font-size: $subtitle-font-size;
+    text-align: $principal-alignment;
+    color: $third-color;
+    margin-left: $primary-left-margin;
+    margin-right: $primary-right-margin;
+}
+
+#footer__text {
+    color: $primary-color;
+    font-size: $optional-font-size;
+};
+
+$botones: (
+    principal: #e63946,
+    secundatio: #25D366,
+    opcional: $third-color
+);
+
+@each $boton, $color in $botones {
+    #btn--#{$boton} {
+        background-color: $color;
+    }
+    
+}
+
+
+
+@mixin sizes($width, $height) {
+    height: $height;
+    width: $width;
+}
+
+#box--blog{
+    @include sizes(25rem,25rem )
+}
+
+#box--home {
+    @include sizes(15rem,15rem )
+}
+
+main {
+    background-color: $primary-color;
+    padding: $main-padding;
+    font-size: $optional-font-size;
+}
+
+body {
+    background-color: $primary-color;
+    font-family: $principal-font;
+    color: $third-color;
+}
+
+header nav ul li{
+    display: $inline-block-display
+}
+
+header nav ul li a {
+    text-decoration: $none;
+    color: inherit;
+    font-size: $optional-font-size;
+    padding: $lower-padding;
+}
+
+header nav ul ol li a {
+    text-decoration: $none;
+    color: inherit;
+    font-size: $optional-font-size;
+    padding: $small-padding;
+}
+
+
+header nav ul ol {
+    display: $none;
+    position: absolute;
+}
+
+
+header nav ul {
+    list-style: $none;
+}
+
+main table {
+    margin-left: $primary-left-margin;
+    margin-right: $primary-right-margin;
+}
+
+table ol {
+    list-style: $none;
+}
+
+#t01 {
+    background-color:$primary-color;
+    color: $third-color;
+}
+
+header nav ul ol li {
+    display: $block-display
+}
+
+footer {
+    background-image: $principal-gradient;
+    padding: $footer-padding;
+}
+
+#header__nav {
+    display: $flex-display;
+    justify-content: $flexend-justify;
+    padding-right: $big-padding;
+}
+
+#main__form--home {
+    padding: $lower-padding;
+    margin-left: $primary-left-margin;
+    margin-right: $primary-right-margin;
+    background-color: $primary-color;
+    border: solid 0.1rem $third-color;
+}
+
+#main__form--newsletter {
+    padding: $lower-padding;
+    width: $principal-width;
+    margin-left: $primary-left-margin;
+    margin-right: $primary-right-margin;
+    background-color: $primary-color;
+    border: solid 0.1rem $third-color;
+}
+
+#main__form--title {
+    color: $third-color;
+    text-align: $principal-alignment;
+    font-size: $optional-font-size;
+}
+
+#main__boxes {
+    display: $flex-display;
+    justify-content: $justify-center;
+    margin-bottom: $small-margin;
+}
+
+#main__boxes--modifier {
+    border-top: solid $small-border;
+    border-top-color: $third-color;
+    padding:$lower-padding;
+    margin: $small-margin;
+    text-align: $principal-alignment;
+    font-size: $optional-font-size;
+    background-color: $fourth-color;
+    height: $main-height;
+    width: $main-width;
+    display: $inline-block-display;
+    transition: all 2s;
+}
+
+
+#main__boxes--modifier:hover {
+    border-top-color: $secondary-color;
+    padding:$lower-padding;
+    color: $primary-color;
+    margin: $small-margin;
+    font-size: $subtitle-font-size;
+    background-color: $third-color;
+    height: $bigger-height;
+    width: $bigger-width;
+}
+
+#main__img {
+    display: $block-display;
+    margin-left: $primary-left-margin;
+    margin-right: $primary-right-margin;
+}
+
+#main__background {
+    background-image: $principal-gradient;
+    padding-top: $small-padding;
+}
+
+#main__links {
+    text-decoration: $none;
+    color: $primary-color;
+}
+
+#main__modal {
+    display: $flex-display;
+    margin-left: $primary-left-margin;
+    margin-right: $primary-right-margin;
+    font-size: $optional-font-size;
+}
+
+#main_boton--green {
+    padding: $footer-padding;
+    font-size: $subtitle-font-size;
+    text-align: $principal-alignment;
+    color: $primary-color;
+    margin: $small-margin;
+    cursor: pointer;
+    background-color: $whatsapp-color;
+    border-radius: 3rem;
+    margin-left: $primary-left-margin;
+    margin-right: $primary-right-margin;
+    height: $button-height;
+    width: $button-width;
+}
+
+#main__boton--submit {
+    padding: $small-padding $small-padding;
+    background-color: $secondary-color;
+    border-radius: $small-padding;
+    font-size: $optional-font-size;
+    color: $primary-color;
+    cursor: pointer;
+    width: $total-width;
+    margin-top: $tiny-margin;
+}
+
+input[type=text], select{
+    display: $inline-block-display;
+    width: $total-width;
+    padding: $lower-padding $small-padding;
+    box-sizing: border-box;
+    border-radius: $tiny-margin;
+    transition: all 2s;
+}
+
+input[type=text]:focus {
+    border: 0.3rem solid $third-color;
+    font-size: $optional-font-size;
+}
