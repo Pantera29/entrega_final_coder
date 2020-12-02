@@ -1,10 +1,11 @@
-$title-font-size: 4rem;
+$title-font-size: 7.5rem;
 $subtitle-font-size: 3rem;
 $optional-font-size: 2rem;
 $principal-alignment: center;
 $primary-color: white;
 $principal-width: 50%;
 $secondary-width: 30%;
+$optional-width: 75%;
 $total-width: 100%;
 $primary-right-margin: auto;
 $primary-left-margin: auto;
@@ -28,9 +29,9 @@ $justify-center:center;
 $tiny-margin: 0.5rem;
 $small-margin: 2rem;
 $small-border: 1rem;
-$main-height:15rem;
+$main-height:16rem;
 $main-width:10rem;
-$bigger-height: 20rem;
+$bigger-height: 21rem;
 $bigger-width:15rem;
 $button-height: 15rem;
 $button-width:25rem;
@@ -45,9 +46,10 @@ html{
     font-size: $title-font-size;
     text-align: $principal-alignment;
     color: $primary-color;
-    width: $principal-width;
+    width: $optional-width;
     margin-left: $primary-left-margin;
     margin-right: $primary-right-margin;
+    padding-top: $big-padding;
 
 }
 
@@ -58,6 +60,7 @@ html{
     width: $principal-width;
     margin-left: $primary-left-margin;
     margin-right: $primary-right-margin;
+    font-style: italic;
 }
 
 #main__subtitle--modifier {
@@ -67,14 +70,17 @@ html{
     font-weight: $subtitle-font-weight;
     margin-left: $primary-left-margin;
     margin-right: $primary-right-margin;
+    margin-bottom: $small-margin;
+    margin-top: 4rem;
 }
 
 #main__subtitle--modifier--blue {
-    font-size: $subtitle-font-size;
+    font-size: $optional-font-size;
     text-align: $principal-alignment;
     color: $third-color;
     margin-left: $primary-left-margin;
     margin-right: $primary-right-margin;
+    margin-bottom: $small-margin;
 }
 
 #footer__text {
@@ -133,36 +139,17 @@ header nav ul li a {
     padding: $lower-padding;
 }
 
-header nav ul ol li a {
-    text-decoration: $none;
-    color: inherit;
+header nav ul li a:hover {
+    color: $primary-color;
     font-size: $optional-font-size;
-    padding: $small-padding;
+    padding: $lower-padding;
+    text-decoration: $none;
+    background-color: $third-color;
+
 }
-
-
-header nav ul ol {
-    display: $none;
-    position: absolute;
-}
-
 
 header nav ul {
     list-style: $none;
-}
-
-main table {
-    margin-left: $primary-left-margin;
-    margin-right: $primary-right-margin;
-}
-
-table ol {
-    list-style: $none;
-}
-
-#t01 {
-    background-color:$primary-color;
-    color: $third-color;
 }
 
 header nav ul ol li {
@@ -171,13 +158,20 @@ header nav ul ol li {
 
 footer {
     background-image: $principal-gradient;
-    padding: $footer-padding;
+    padding: $small-padding;
 }
 
 #header__nav {
     display: $flex-display;
     justify-content: $flexend-justify;
     padding-right: $big-padding;
+    padding-top: $lower-padding;
+    background-color:$primary-color;
+    margin-bottom: $tiny-margin;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 9999;
 }
 
 #main__form--home {
@@ -190,11 +184,14 @@ footer {
 
 #main__form--newsletter {
     padding: $lower-padding;
-    width: $principal-width;
+    width: 35%;
     margin-left: $primary-left-margin;
     margin-right: $primary-right-margin;
     background-color: $primary-color;
     border: solid 0.1rem $third-color;
+    margin-bottom: 5rem;
+    font-size: $optional-font-size;
+
 }
 
 #main__form--title {
@@ -223,30 +220,61 @@ footer {
     transition: all 2s;
 }
 
+#secondary__boxes--modifier {
+    border-top: solid $small-border;
+    border-top-color: $third-color;
+    padding:$lower-padding;
+    margin: $small-margin;
+    text-align: $principal-alignment;
+    font-size: $optional-font-size;
+    background-color: $fourth-color;
+    height: $main-height;
+    width: $main-width;
+    display: $inline-block-display;
+}
+
 
 #main__boxes--modifier:hover {
     border-top-color: $secondary-color;
     padding:$lower-padding;
     color: $primary-color;
     margin: $small-margin;
-    font-size: $subtitle-font-size;
+    font-size: $optional-font-size;
     background-color: $third-color;
     height: $bigger-height;
     width: $bigger-width;
+    #prueba__boxes {display: block};
 }
 
 #main__img {
     display: $block-display;
     margin-left: $primary-left-margin;
     margin-right: $primary-right-margin;
+    padding-left: $small-padding;
+    padding-right: $small-padding;
 }
 
 #main__background {
-    background-image: $principal-gradient;
-    padding-top: $small-padding;
+    background-image: url("https://www.unleashedsoftware.com/assets/uploads/2016/05/hero-product-pages.jpg");
+    background-size: cover;
+    padding-top: 10rem;
+    padding-bottom: 6rem;
+    margin-top: 6rem;
 }
 
 #main__links {
+    text-decoration: $none;
+    color: $third-color;
+}
+
+#prueba__boxes {
+    display: none;
+    font-size: 1.5rem;
+    text-align: left;
+}
+
+
+#main__links--modifier {
     text-decoration: $none;
     color: $primary-color;
 }
@@ -258,23 +286,29 @@ footer {
     font-size: $optional-font-size;
 }
 
+#formatoModal {
+    display: flex;
+    margin-right: auto;
+    margin-left: auto;
+    font-size: 2rem;
+}
+
 #main_boton--green {
-    padding: $footer-padding;
+    padding: $small-padding;
     font-size: $subtitle-font-size;
     text-align: $principal-alignment;
     color: $primary-color;
-    margin: $small-margin;
+    margin: 3rem;
     cursor: pointer;
-    background-color: $whatsapp-color;
+    background-color: $secondary-color;
     border-radius: 3rem;
     margin-left: $primary-left-margin;
     margin-right: $primary-right-margin;
-    height: $button-height;
-    width: $button-width;
+    width: $secondary-width;
 }
 
 #main__boton--submit {
-    padding: $small-padding $small-padding;
+    padding: $lower-padding $lower-padding;
     background-color: $secondary-color;
     border-radius: $small-padding;
     font-size: $optional-font-size;
@@ -286,14 +320,82 @@ footer {
 
 input[type=text], select{
     display: $inline-block-display;
+    font-size: 1.5rem;
     width: $total-width;
     padding: $lower-padding $small-padding;
     box-sizing: border-box;
     border-radius: $tiny-margin;
-    transition: all 2s;
+    transition: all 1s;
+    margin-top: $tiny-margin;
+    margin-bottom: $tiny-margin;
+
 }
 
 input[type=text]:focus {
     border: 0.3rem solid $third-color;
     font-size: $optional-font-size;
 }
+
+#main__paragraph--blue{
+    font-size: $optional-font-size;
+    padding: $main-padding;
+}
+
+
+/* Add a white background color to the top navigation */
+#topnav {
+    overflow: hidden;
+    background-color: $primary-color;
+  }
+  
+  /* Style the links inside the navigation bar */
+ #topnav a {
+    float: left;
+    display: block;
+    color: $third-color;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 1.5rem
+  }
+  
+  /* Change the color of links on hover */
+  #topnav a:hover {
+    background-color: $primary-color;
+    color: $secondary-color;
+  }
+  
+  /* Add an active class to highlight the current page */
+  #topnav a.active {
+    background-color: $third-color;
+    color: white;
+  }
+  
+  /* Hide the link that should open and close the topnav on small screens */
+  #topnav .icon {
+    display: none;
+  }
+
+  /* When the screen is less than 600 pixels wide, hide all links, except for the first one ("Home"). Show the link that contains should open and close the topnav (.icon) */
+@media screen and (max-width: 600px) {
+    #topnav a:not(:first-child) {display: none;}
+    #topnav a.icon {
+      float: right;
+      display: block;
+    }
+  }
+  
+  /* The "responsive" class is added to the topnav with JavaScript when the user clicks on the icon. This class makes the topnav look good on small screens (display the links vertically instead of horizontally) */
+  @media screen and (max-width: 600px) {
+    #topnav.responsive {position: relative;}
+    #topnav.responsive a.icon {
+      position: absolute;
+      right: 0;
+      top: 0;
+    }
+    #topnav.responsive a {
+      float: none;
+      display: block;
+      text-align: left;
+    }
+  }

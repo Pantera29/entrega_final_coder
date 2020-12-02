@@ -1,7 +1,6 @@
 {
   "name": "cuartaentrega",
   "version": "1.0.0",
-  "description": "",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
@@ -13,5 +12,15 @@
   "devDependencies": {
     "node-sass": "^5.0.0",
     "nodemon": "^2.0.6"
-  }
+  },
+  "dependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Pantera29/cuarta_entrega_coder.git"
+  },
+  "bugs": {
+    "url": "https://github.com/Pantera29/cuarta_entrega_coder/issues"
+  },
+  "homepage": "https://github.com/Pantera29/cuarta_entrega_coder#readme",
+  "description": ""
 }

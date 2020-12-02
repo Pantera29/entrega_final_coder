@@ -9,73 +9,175 @@
     <title>Home - Product Academy</title>
     <!--CDN Bootstrap-->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
-    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,400;0,900;1,300;1,400;1,900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/cuartaentrega.css">
     
 </head>
 <body>
-    <header id="header__nav" class="col-lg-12 col-md-12">  <!--Encabezado-->
-        <nav>  <!--Nav es menu-->
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="contenido.html">Contenido</a></li>
-                <li><a href="miHistoria.html">Mi Historia</a></li>
-                <li><a href="newsletter.html">Newsletter</a></li>
-            </ul>
+    <header class="col-lg-12 col-md-12">  <!--Encabezado-->
+        <nav id="header__nav">  <!--Nav es menu-->
+            <div id="topnav">
+                <a href="#home" class="active">HOME</a>
+                <a href="#contenido">CONTENIDO</a>
+                <a href="#mihistoria">MI HISTORIA</a>
+                <a href="#articulos">ARTICULOS</a>
+                <a href="#contacto">CONTACTO</a>
+                <a href="javascript:void(0);" class="icon">
+                  <i class="fa fa-bars"></i>
+                </a>
+              </div>
         </nav>
     </header>
 
-    <main class="row" id="main__background">
-
-        <article class="col-lg-7 col-md-12">
-
-            <h1 id="main__title">Convertite en un experto en Producto Digital</h1>
-            <h2 id="main__subtitle">Clases online en vivo</h2>
-
-        </article>
-
-        <aside class="col-lg-5 col-md-12">
-            <div id="main__form--home">
-                <legend id="main__form--title"><strong> Dejanos tus datos para obtener más información de nuestros cursos </strong></legend>
-
-                <form>
-                    <div class="form-group">
-                        <label for="NombreApellido">Nombre y Apellido</label>
-                        <input type="text" class="form-control" id="NombreApellido" placeholder="Nombre y Apellido">
-                      </div>
-                    <div class="form-group">
-                      <label for="Email">Email</label>
-                      <input type="text" class="form-control" id="Email" placeholder="Ingrese su email" aria-describedby="emailHelp">
-                    </div>
-                    <button type="submit" class="btn btn-primary" id="main__boton--submit">Quiero recibir información</button>
-                  </form>
+    <section id="home">
+        <div id="main__background">
+            <h1 id="main__title">WELCOME TO PRODUCT ACADEMY</h1>
+            <h2 id="main__subtitle">Product Management, Growth, Analytics & More</h2>
+            <div id="main_boton--green">
+            <a href="#contenido" id="main__links--modifier">Quiero saber más</a>
             </div>
+        </div>
+    </section>
 
-
-
-        </aside>
-
-    </main>
-    <section>
+    <section id="contenido">
         <br>
 
-        <div id="main__subtitle--modifier">Contenido</div>
+        <div id="main__subtitle--modifier">Contenido del Curso</div>
 
         <div class="row" id="main__boxes">    
-            <div class="col-lg-2 col-md-6 col-12" id="main__boxes--modifier">Introduccion a Producto Digital</div>
-            <div class="col-lg-2 col-md-6 col-12" id="main__boxes--modifier">Adquisición</div>
-            <div class="col-lg-2 col-md-6 col-12" id="main__boxes--modifier">Retención</div>
-            <div class="col-lg-2 col-md-6 col-12" id="main__boxes--modifier">Monetización</div>
+            <div class="col-lg-2 col-md-6 col-6" id="main__boxes--modifier">Introduccion a Producto Digital
+                <span id="prueba__boxes">
+                    <br>
+                    <li>Qué es Producto Digital</li>
+                    <li>Rol de un Product Manager</li>
+                    <li>Producto vs Desarrollo</li>
+                </span>
+            </div>
+
+            <div class="col-lg-2 col-md-6 col-6" id="main__boxes--modifier">Adquisición
+                <span id="prueba__boxes">
+                    <br>
+                    <li>Framework de Adquisición</li>
+                    <li>Estrategias y Canales de Adquisición</li>
+                    <li>Analytics y Testing</li>
+                    <li>Casos de Uso</li>
+                </span>
+            </div>
+            <div class="col-lg-2 col-md-6 col-6" id="main__boxes--modifier">Retención
+                <span id="prueba__boxes">
+                    <br>
+                    <li>Framework de Retención</li>
+                    <li>Estrategias de Retención de usuarios</li>
+                    <li>Analytics para medir Engagement</li>
+                    <li>Casos de Uso</li>
+                </span>
+            </div>
+            <div class="col-lg-2 col-md-6 col-6" id="main__boxes--modifier">Monetización
+                <span id="prueba__boxes">
+                    <br>
+                    <li>Framework de Monetización</li>
+                    <li>Estrategias de Monetización</li>
+                    <li>Testing</li>
+                    <li>Casos de Uso</li>
+                </span>
+            </div>
+            <br>
+
+            <div class="col-lg-6 col-md-6 col-6" id="main_boton--green">
+                <a href="#contacto" id="main__links--modifier">Quiero más información</a>
+            </div>
         </div>
         <br>
         <br>
     </section>
 
+    <section id="mihistoria">
+        <br>
+        <div id="main__subtitle--modifier">Mi Historia</div>
+
+        <div class="card" style="width: 32rem;" id="main__img">
+            <img src="https://pbs.twimg.com/profile_images/1263115715424530432/lcua8S52.jpg" class="card-img-top" alt="foto">
+            <div class="card-body">
+              <p class="card-text" id="main__paragraph--blue">Franco Longhi
+                  <br>
+                  <strong>Product Owner @ Kavak Argentina</strong>              </p>
+            </div>
+          </div>
+            <br>
+        <div id="main__paragraph--blue">
+            Creé <strong>ProductAcademy</strong> para compartir los conocimientos que adquirí en más de 5 años de experiencia trabajando en compañias 
+            cuyo foco se encontraba en construir el mejor producto posible para sus usuarios y ambas se convirtieron en líderes de
+            sus respectivos mercados.
+            <br>
+            <br>
+            Actualmente me desempeño como <strong>Product Owner en Kavak.com</strong>, el ecommerce de autos usados número 1 de Latinoamérica.
+            Durante estos dos años lideré los proyectos de financiación aumentando la penetración 8X en sólo seis meses.
+            Con mi equipo también desarrollamos un nuevo vertical de autos prendados que se convirtió en un 
+            diferencial absoluto para Kavak, convirtiendonós en el referente para este tipo de operaciones en Argentina.
+            <br>    
+            <br>
+            En Ixpandit Fintech Factory construimos el producto de préstamos personales más rápido e inclusivo del país. 
+            Durante mis tres años en la empresa pasamos de vender 200 créditos por mes a más
+            de 6,000, sin la necesidad de aumentar el tamaño del equipo.
+            <br>
+            <br>
+            Confío en que mi experiencia puede ser muy valiosa para aquellos que estén comenzando
+            a recorrer el camino de Producto Digital como también para aquellas personas que se
+            encuentren interesadas en un área que no para de crecer en las últimas décadas y
+            cuyos skills son cada vez más demandados por el mercado.
+            <br>
+            <br>
+        </div>
+
+    </section>
+
+    <section id="articulos">
+        <br>
+        <div id="main__subtitle--modifier">Articulos de Prensa</div>
+
+        <div class="row" id="main__boxes">
+            <div class="col-lg-3 col-md-6 col-12" id="secondary__boxes--modifier"><a id="main__links" href="https://www.productplan.com/5-great-product-management-articles/">Qué es Producto Digital?</a></div>
+            <div class="col-lg-3 col-md-6 col-12" id="secondary__boxes--modifier"><a id="main__links" href="https://www.productplan.com/5-great-product-management-articles/">Cómo convertirme en Product Manager?</a></div>
+            <div class="col-lg-3 col-md-6 col-12" id="secondary__boxes--modifier"><a id="main__links" href="https://www.productplan.com/5-great-product-management-articles/">Cómo es el dia a dia de un Product Manager?</a></div>
+            <div class="col-lg-3 col-md-6 col-12" id="secondary__boxes--modifier"><a id="main__links" href="https://www.productplan.com/5-great-product-management-articles/">Cúal es la diferencia entre un Product Manager y un Product Owner?</a></div>
+            <div class="col-lg-3 col-md-6 col-12" id="secondary__boxes--modifier"><a id="main__links" href="https://www.productplan.com/5-great-product-management-articles/">10 consejos que cualquier Project Manager deberia escuchar</a></div>
+            <div class="col-lg-3 col-md-6 col-12" id="secondary__boxes--modifier"><a id="main__links" href="https://www.productplan.com/5-great-product-management-articles/">Qué es Canvas?</a></div>
+            <div class="col-lg-3 col-md-6 col-12" id="secondary__boxes--modifier"><a id="main__links" href="https://www.productplan.com/5-great-product-management-articles/">Plan estratégico de un Producto</a></div>
+            <div class="col-lg-3 col-md-6 col-12" id="secondary__boxes--modifier"><a id="main__links" href="https://www.productplan.com/5-great-product-management-articles/">10 libros que todo Product Manager debe leer</a></div>
+            <div class="col-lg-3 col-md-6 col-12" id="secondary__boxes--modifier"><a id="main__links" href="https://www.productplan.com/5-great-product-management-articles/">Cómo crear un Producto exitoso?</a></div>
+        </div>
+    </section>
+
+
+    <section id="contacto">
+        <br>
+        <div id="main__subtitle--modifier">Contacto</div>
+
+        <div id="main__form--newsletter">
+            <legend id="main__form--title"><strong> Dejanos tus datos para obtener más información de nuestros cursos </strong></legend>
+
+            <form>
+                <div class="form-group">
+                    <label for="NombreApellido">Nombre y Apellido</label>
+                    <input type="text" class="form-control" id="NombreApellido" placeholder="Ingrese su Nombre y Apellido">
+                  </div>
+                <div class="form-group">
+                  <label for="Email">Email</label>
+                  <input type="text" class="form-control" id="Email" placeholder="Ingrese su email" aria-describedby="emailHelp">
+                </div>
+                <button type="submit" class="btn btn-primary" id="main__boton--submit">Quiero recibir información</button>
+              </form>
+        </div>
+        <br>
+        <br>
+    </section>
+
+
+
+
     <footer> 
-        <p id="footer__text">
-            Escribime a franco@productacademy.com para solicitar información de las clases
-        </p>
+        <p id="footer__text">Copyright @ Franco Longhi 2020        </p>
     </footer>
 
 
